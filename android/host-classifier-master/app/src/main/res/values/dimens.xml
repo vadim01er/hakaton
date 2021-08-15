@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="offset_20">20dp</dimen>
+    <dimen name="offset_60">60dp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="confirm_button_height">48dp</dimen>
+    <dimen name="offset_50">50dp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+</resources>

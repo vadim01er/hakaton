@@ -10,7 +10,7 @@ public class HackathonApplication {
     public static void main(String[] args) {
         SpringApplication.run(HackathonApplication.class, args);
         ConnectToPython python = new ConnectToPython();
-        python.connect();
+        python.connect("po");
     }
 
 }

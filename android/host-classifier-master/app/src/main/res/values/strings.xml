@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">HOST CLASSIFIER</string>
+    <string name="host_Check_title">ПРОВЕРКА ХОСТА НА ОТВЕТ</string>
+    <string name="host_check_field_hint">Название хоста</string>
+    <string name="check_host_confirm_button_text">ОТПРАВИТЬ</string>
+</resources>
