@@ -6,7 +6,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 private const val BASE_URL =
-    "https://359f57360b04.ngrok.io"
+    "https://45c16337d95b.ngrok.io"
 
 private val retrofit = Retrofit.Builder()
     .addConverterFactory(ScalarsConverterFactory.create())
