@@ -1,4 +1,4 @@
-package ru.mts.hakaton.Controller;
+package ru.mts.hackathon.Controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;

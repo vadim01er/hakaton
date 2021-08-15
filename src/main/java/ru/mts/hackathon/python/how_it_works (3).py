@@ -8,7 +8,7 @@ import joblib
 import pandas as pd
 import string
 
-model = joblib.load('/Users/macbook/IdeaProjects/mts/hakaton/src/main/java/ru/mts/hakaton/python/model3.py')
+model = joblib.load('src/main/java/ru/mts/hackathon/python/model3.py')
 
 
 # In[13]:

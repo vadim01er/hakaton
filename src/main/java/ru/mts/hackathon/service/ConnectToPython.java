@@ -1,4 +1,4 @@
-package ru.mts.hakaton.service;
+package ru.mts.hackathon.service;
 
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ public class ConnectToPython {
         Process p;
         try {
             p = Runtime.getRuntime().exec(
-                    new String[]{"python3", "/Users/macbook/IdeaProjects/mts/hakaton/src/main/java/ru/mts/hakaton/python/how_it_works (3).py", "packet.to"});
+                    new String[]{"python3", "src/main/java/ru/mts/hackathon/python/how_it_works (3).py", "packet.to"});
             BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
             String ret = in.readLine();
             in = new BufferedReader(new InputStreamReader(p.getErrorStream()));
