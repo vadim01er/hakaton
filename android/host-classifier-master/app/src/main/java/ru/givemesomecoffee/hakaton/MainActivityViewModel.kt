@@ -32,17 +32,17 @@ class MainActivityViewModel : ViewModel() {
 
     private fun validateHostName(host: String): Boolean {
         var validated = false
-        val geo = host.split(".")
+     /*   val geo = host.split(".")
         val zone = geo.last()
-        val pattern = Pattern.compile(IANA_TOP_LEVEL_DOMAINS)
+        val pattern = Pattern.compile(IANA_TOP_LEVEL_DOMAINS)*/
         when {
             host.isEmpty() -> _validationState.postValue(ValidationState.error(ERROR_EMPTY_FIELD))
             host.contains(" ") ->
                 _validationState.postValue(ValidationState.error(ERROR_WHITESPACES))
             !Patterns.WEB_URL.matcher(host).matches() ->
                 _validationState.postValue(ValidationState.error(ERROR_WRONG_HOST))
-            !pattern.matcher(zone).matches() ->
-                _validationState.postValue(ValidationState.error(ERROR_WRONG_HOST))
+           /* !pattern.matcher(zone).matches() ->
+                _validationState.postValue(ValidationState.error(ERROR_WRONG_HOST))*/
             else -> validated = confirmValidation()
         }
         return validated
