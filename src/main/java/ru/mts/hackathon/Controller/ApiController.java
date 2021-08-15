@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class ApiController {
 
+    @GetMapping("/")
+    public ResponseEntity getStatus() {
+        return ResponseEntity.ok("OK");
+    }
+
     @GetMapping("/check")
     public ResponseEntity<String> getCheckMapping(@RequestParam("value") String value) {
 
